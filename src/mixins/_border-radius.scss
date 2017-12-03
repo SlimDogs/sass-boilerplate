@@ -7,7 +7,8 @@
  * ```scss
  * .card {
  *   @include border-radius(0.8);
- * }```
+ * }
+ * ```
  */
 
 @mixin border-radius($radius) {

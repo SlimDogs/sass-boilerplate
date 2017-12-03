@@ -7,7 +7,8 @@
  * ```scss
  * .faded-text {
  *   @include opacity(0.8);
- * }```
+ * }
+ * ```
  */
 
 @mixin opacity($opacity) {

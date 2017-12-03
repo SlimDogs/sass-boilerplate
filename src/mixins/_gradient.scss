@@ -15,7 +15,8 @@
  *
  * .test-3 {
  *   @include linear-gradient(42deg, #B58234 0%, #D2B545 50%, #D7C04D 50.01%, #FFFFFF 100%);
- * }```
+ * }
+ * ```
  */
 
 @function convert-angle($value, $unit) {

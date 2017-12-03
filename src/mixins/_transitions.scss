@@ -8,7 +8,8 @@
  * a {
  *   color: gray;
  *   @include transition(color .3s ease);
- * }```
+ * }
+ * ```
  */
 
 @mixin transition($args...) {
