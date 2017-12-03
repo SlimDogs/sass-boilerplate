@@ -21,30 +21,13 @@
 - [Prefix or Vendorize](#prefix-or-vendorize)
 - [Transition](#transition)
 
-### Pixels to rem
-- `Type:` Function
-- `Description:` Convert pixels to rems easealy
-
-Usage:
-```div {
-height: pxToRem(45px);
-}```
-
-### Fixed Z index
-- `Type:` Function
-- `Description:` Have and use a ordered and listed z-index values!
-
-Usage:
-```div.header {
-z-index: z('site-header');
-}```
-
 ### Float
 - `Type:` Animation
 - `Description:` Floating/hovering animation
 
 Usage:
-```div {
+```scss
+div {
 @extend %animation-float;
 }```
 
@@ -53,7 +36,8 @@ Usage:
 - `Description:` Pulsing shadow/outline animation
 
 Usage:
-```div {
+```scss
+div {
 @extend %pulse;
 }```
 
@@ -62,8 +46,30 @@ Usage:
 - `Description:` 360deg infinite spinning animation
 
 Usage:
-```div {
+```scss
+div {
 @extend %spin;
+}```
+
+### Pixels to rem
+- `Type:` Function
+- `Description:` Convert pixels to rems easealy
+
+Usage:
+```scss
+div {
+height: pxToRem(45px);
+}
+```
+
+### Fixed Z index
+- `Type:` Function
+- `Description:` Have and use a ordered and listed z-index values!
+
+Usage:
+```scss
+div.header {
+z-index: z('site-header');
 }```
 
 ### Absolute
@@ -71,7 +77,8 @@ Usage:
 - `Description:` Shortcut for setting position absolute with all positions containing same value
 
 Usage:
-```div {
+```scss
+div {
 @include absolute(10px);
 }```
 
@@ -80,7 +87,8 @@ Usage:
 - `Description:` Vendorized blur
 
 Usage:
-```.blured-text {
+```scss
+.blured-text {
 @include blur(0.8);
 }```
 
@@ -89,7 +97,8 @@ Usage:
 - `Description:` Vendorized border-radius shortcut
 
 Usage:
-```.card {
+```scss
+.card {
 @include border-radius(0.8);
 }```
 
@@ -98,7 +107,8 @@ Usage:
 - `Description:` Vendorized box-shadow shortcut
 
 Usage:
-```.element {
+```scss
+.element {
 @include box-shadow(5px, 3px, 10px, #000);
 }```
 
@@ -107,7 +117,8 @@ Usage:
 - `Description:` Vendorized flex-order shortcut
 
 Usage:
-```.card {
+```scss
+.card {
 @include flex-order(-1);
 }```
 
@@ -116,7 +127,8 @@ Usage:
 - `Description:` Comfortable way of setting css gradients!
 
 Usage:
-```.test-1 {
+```scss
+.test-1 {
 @include linear-gradient(#31B7D7, #EDAC7D);
 }
 
@@ -133,7 +145,8 @@ Usage:
 - `Description:` Vendorized animation & keyframes shortcut
 
 Usage:
-```@include keyframes(slide-down) {
+```scss
+@include keyframes(slide-down) {
 0% { opacity: 1; }
 90% { opacity: 0; }
 }
@@ -150,7 +163,8 @@ background: black;
 - `Description:` Easy media queries!
 
 Usage:
-```.element {
+```scss
+.element {
 width: 100px;
 height: 100px;
 background-color: black;
@@ -165,7 +179,8 @@ background-color: white;
 - `Description:` Vendorized opacity shortcut
 
 Usage:
-```.faded-text {
+```scss
+.faded-text {
 @include opacity(0.8);
 }```
 
@@ -174,7 +189,8 @@ Usage:
 - `Description:` Set parallax image backfround easy!
 
 Usage:
-```div.msm-header {
+```scss
+div.msm-header {
 @include parallax-background('/assets/images/header2_offset.jpg');
 }```
 
@@ -183,7 +199,8 @@ Usage:
 - `Description:` Easy way of setting placeholder stylings
 
 Usage:
-```input.element {
+```scss
+input.element {
 @include placeholder {
 font-style:italic;
 color: white;
@@ -196,7 +213,8 @@ font-weight:100;
 - `Description:` Prefix or vendorize your style attributes
 
 Usage:
-```span.icon {
+```scss
+span.icon {
 @include prefix(transform, rotate(45deg), webkit ms);
 }```
 
@@ -205,7 +223,8 @@ Usage:
 - `Description:` Vendorized transitions
 
 Usage:
-```a {
+```scss
+a {
 color: gray;
 @include transition(color .3s ease);
 }```
